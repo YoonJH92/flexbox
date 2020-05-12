@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+        
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nanum Pen Script', cursive;
+    line-height: 1.4;
+}
+a{text-decoration: none;}
+p{margin:0.75rem 0;}
+.text-primary{color:#93cb52;}
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #333333;
+    color: #ffffff;
+    z-index: 1;
+    padding: 1rem;
+    justify-content: space-between;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+#navbar ul li a {
+    color: #ffffff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    font-size: 1.25rem;
+}
+
+#navbar ul li a:hover{
+    background-color: #93cb52;
+    border-radius: 5px;
+}
+
+#showcase{
+    background:#333 url(../img/space.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: #ffffff;
+    position: relative;
+}
+
+#showcase .showcase-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
+    /* 오버레이 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0 ,0.4);
+}
+
+.l-heading{
+    font-size : 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.btn{
+    display: inline-block;
+    color: #ffffff;
+    background-color: #93cb52;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.py-1{
+    padding: 1.5rem 0;
+}
+
+.py-2{
+    padding: 2rem 0;
+}
+
+.py-3{
+    padding: 3rem 0;
+}
+
+.bg-light{
+    background-color: #f4f4f4;
+    color: #333;
+}
+.bg-dark{
+    background-color: #333333;
+    color: #ffffff;
+}
+.bg-primary{
+    background-color: #93cb52;
+    color: #ffffff;
+}
+.btn-dark{
+    background-color: #333333;
+    color: #ffffff;
+}
+.p-1{
+    padding: 1.5rem;
+}
+.p-2{
+    padding: 2rem;
+}
+.p-3{
+    padding: 3rem;
+}
+.list{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+.list li{
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+#what .items{
+    display: flex;
+    padding: 1rem;
+}
+#what .item{
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+#what .items .item i {
+    background: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#who {
+    display:flex;
+}
+#who div{ flex : 1;}
+#who .who-img{
+    background: url(../img/space1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* 클라이언트 섹션 */
+#clients .items{
+    display: flex;
+    justify-content: space-around;
+}
+#clients .items img{
+    display: block;
+    margin: auto;
+    width: 50px;
+}
+/* 컨택트 */
+#contact{
+    display: flex;
+}
+#contact .map{
+    flex: 6;
+} 
+#contact .contact-form{
+    flex: 4;
+} 
+#contact .contact-form .form-group{
+    margin :0.75rem;
+}
+#contact .contact-form label{
+    display: block;
+}
+#contact .contact-form input,#contact .contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
